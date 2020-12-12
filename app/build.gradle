@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.boluo.plugin'
+    id 'com.apkrename.plugin'
 }
 
 android {
@@ -28,6 +29,17 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    flavorDimensions 'normal'
+
+    productFlavors {
+        qq {
+            dimension 'normal'
+        }
+        baidu {
+            dimension 'normal'
+        }
     }
 }
 

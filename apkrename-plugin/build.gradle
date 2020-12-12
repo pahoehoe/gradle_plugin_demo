@@ -17,6 +17,10 @@ plugins {
     id 'maven-publish'
 }
 
+dependencies {
+    implementation 'com.android.tools.build:gradle:4.1.0'
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -32,6 +36,7 @@ gradlePlugin {
         }
     }
 }
+
 
 publishing {
     publications {

@@ -12,7 +12,8 @@ ERROR: JDWP Transport dt_socket failed to initialize, TRANSPORT_INIT(510)
 JDWP exit error AGENT_ERROR_TRANSPORT_INIT(197): No transports initialized [debugInit.c:750]
 
 ```
-原因就是调试步骤中设置的"address=5005"端口被占用了.在windows dos中执行命令:  
+原因就是调试步骤中设置的"address=5005"端口被占用了导致的.如果想要调试命名正常运行,需要结束占用5005端口的进程.  
+在windows dos中执行命令:  
 ```
 netstat -ano | findstr "5005"
 ```

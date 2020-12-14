@@ -1,8 +1,10 @@
+import java.text.SimpleDateFormat
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.boluo.plugin'
-    id 'com.apkrename.plugin'
+//    id 'com.apkrename.plugin'
 }
 
 android {
@@ -53,4 +55,24 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+}
+
+
+//android.applicationVariants.all { variant ->
+//    println("variant="+variant +"   "+android.applicationVariants)
+//    variant.outputs.all { //修改apk名
+//        if (variant.name == "release"){
+//            outputFileName = "WayListen_V${android.defaultConfig.versionName}_${variant.name}.apk"
+//            println outputFileName
+//        }else{
+//            outputFileName = "WayListen_V${android.defaultConfig.versionName}_${getCurrentDate()}_${variant.name}.apk"
+//            println outputFileName
+//        }
+//
+//    }
+//}
+
+def getCurrentDate() {
+    SimpleDateFormat sdf = new SimpleDateFormat("MMddHHmm")
+    return sdf.format(new Date())
 }

@@ -3,8 +3,8 @@ import java.text.SimpleDateFormat
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'com.boluo.plugin'
-//    id 'com.apkrename.plugin'
+//    id 'com.boluo.plugin'
+    id 'com.apkrename.plugin'
 }
 
 android {

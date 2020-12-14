@@ -6,6 +6,8 @@ import org.gradle.api.Project
 public class ApkRenamePlugin implements Plugin<Project> {
 
     public void apply(Project project) {
+
+        println("ApkRenamePlugin!-------------------------------------------------------")
 //        project.afterEvaluate {
             // 应用名称
 //            def projectName = project.name

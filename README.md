@@ -72,10 +72,10 @@ C:\Users\Administrator>netstat -ano | findstr "5005"
 插件代码模块设置成独立的项目不配置到主项目的settings.gradle中.这样做的好处是:  
 1.如果插件代码模块配置到主项目里.一旦发布了一个会导致构建中断的插件,重新发布插件的时候必须先从主项目中把插件依赖移除,等插件发布成功以后
 再将插件依赖加入.非常麻烦.而将插件代码模块设置成独立项目以后,重新发布插件代码到本地仓库的时候不会执行主项目的构建脚本,如果上一次发布的插件  
-有问题也没有关系,因为不会执行了.  <br>
+有问题也没有关系,因为不会执行了.  
+<br>
 2.这样也能进行调试  
-<br>
-<br>
+
 ### 资料
 [Android Gradle 插件开发入门指南（一）,hello world](https://juejin.cn/post/6887581345384497165#heading-11)  
 [Gradle 插件hello world](https://github.com/lenebf/GradlePluginTutorial/tree/main/hello-plugin)  

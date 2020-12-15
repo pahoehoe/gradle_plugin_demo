@@ -51,6 +51,7 @@ C:\Users\Administrator>netstat -ano | findstr "5005"
 [Android 插件 3.0.0 移除了某些 API。如果您使用这些 API，您的 build 将会出现异常。例如，您无法再使用 Variants API 访问 outputFile() 对象](https://developer.android.com/studio/releases/gradle-plugin?hl=zh-cn#behavior_changes)  
 [API 变更](https://developer.android.com/studio/known-issues?hl=zh-cn#variant_api) 
 <br>
+<br>
 2.android.applicationVariants.all.这里要使用all而不是each.  
 ```
    /**

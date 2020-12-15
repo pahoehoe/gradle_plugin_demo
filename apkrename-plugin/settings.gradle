@@ -1,4 +1,4 @@
 //include ':apkrename-plugin'
 include ':plugin'
 include ':app'
-rootProject.name = "gradle_plugin_demo"
+rootProject.name = "apkrename-plugin"

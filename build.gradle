@@ -5,7 +5,7 @@ buildscript {
         google()
         jcenter()
         maven{
-            url('./repo')
+            url('./apkrename-plugin/repo')
         }
     }
     dependencies {
@@ -22,7 +22,7 @@ buildscript {
 allprojects {
     repositories {
         maven{
-            url('./repo')
+            url('./apkrename-plugin/repo')
         }
         google()
         jcenter()
